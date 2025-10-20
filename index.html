@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Birthday, Jaan!</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    
+    
+    <!-- Gift Box Intro -->
+     <div id="giftIntro">
+        <img id="giftBox" src="https://img.freepik.com/premium-photo/minimalistic-animation-gift-box-ai-generated_804788-32195.jpg" alt="Gift Box" />
+        <p class="gift-text">Tap the Gift Box to Open Your Surprise, My Love! 💖</p>
+    </div>
+
+  <!-- Background balloons container -->
+  <div id="balloons-container"></div>
+
+  <!-- Floating hearts container -->
+  <div id="hearts-container"></div>
+
+  <!-- Section 1: Front Page -->
+  <section class="hero" id="section1">
+    <h1>Happy Birthday, My Beta! 🎉🎂</h1>
+    <img src="https://i.postimg.cc/hPpLM6S2/IMG-20251019-WA0014.jpg" alt="Beta Photo" />
+    <p style="margin-top: 20px; font-size: 1.2em; max-width: 80%; color: #cc007a;">
+            This entire site is dedicated to you, my love. Let's celebrate!
+        </p>
+    <button onclick="showSection('section2')">Let's Begin 💖</button>
+  </section>
+
+  <!-- Section 2: Song Memory -->
+  <section class="hidden" id="section2">
+    <div class="song-box">
+      <p>Listen to Our Memory Songs 💿</p>
+      <select id="songSelector" onchange="changeSong(this.value)">
+        <option value="">-- Select a Song --</option>
+        <option value="https://cdn.jsdelivr.net/gh/bhoomija-aiml/birthday-audio@69340b510cdde356e9f9a915d4db8592c6ce7541/Abhi%20Na%20Jao%20Chhod%20Kar.mp3">Abhi Na Jao Chhod Kar</option>
+        <option value="https://cdn.jsdelivr.net/gh/bhoomija-aiml/birthday-audio@main/sachi-muchi.mp3
+">Sachi-Muchi</option>
+        <option value="https://cdn.jsdelivr.net/gh/bhoomija-aiml/birthday-audio@69340b510cdde356e9f9a915d4db8592c6ce7541/Adhoore.mp3">Adhoore</option>
+        <option value="https://cdn.jsdelivr.net/gh/bhoomija-aiml/birthday-audio@69340b510cdde356e9f9a915d4db8592c6ce7541/Happy%20Birthday.mp3">Happy Birthday</option>
+        <option value="https://cdn.jsdelivr.net/gh/bhoomija-aiml/birthday-audio@69340b510cdde356e9f9a915d4db8592c6ce7541/jag%20ghoomeya.mp3">Jag Ghoomeya</option>
+        <option value="https://cdn.jsdelivr.net/gh/bhoomija-aiml/birthday-audio@69340b510cdde356e9f9a915d4db8592c6ce7541/shayrana.mp3">Shayrana</option>
+        <option value="https://cdn.jsdelivr.net/gh/bhoomija-aiml/birthday-audio@69340b510cdde356e9f9a915d4db8592c6ce7541/soch%20na%20sake.mp3">Soch Na Sake</option>
+        <option value="https://cdn.jsdelivr.net/gh/bhoomija-aiml/birthday-audio@69340b510cdde356e9f9a915d4db8592c6ce7541/tum%20se%20hi.mp3">Tum Se Hi</option>
+      </select>
+      <audio id="songPlayer" controls style="margin-top: 15px; width: 100%; max-width: 300px;">
+        <source src="" type="audio/mp3" />
+        Your browser does not support the audio tag.
+      </audio>
+      <div class="nav-buttons">
+        <button onclick="showSection('section1')">💫 Previous</button>
+        <button onclick="showSection('section3')">Next 💓</button>
+      </div>
+    </div>
+  </section>
+
+<!-- Section 3: Memory Lane -->
+<section class="hidden" id="section3">
+  <h2>Our Memory Lane 📸</h2>
+
+  <div class="memory-lane">
+    <!-- Photo 1 -->
+    <div class="memory-card" style="margin-top:0;">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://i.postimg.cc/hPyChf7Q/IMG-20251019-WA0017.jpg" alt="Memory 1" class = "glow" />
+        </div>
+        <div class="card-back">
+          You're not just my favorite person, you're my safe place. Thank you for that. 💫
+        </div>
+      </div>
+    </div>
+
+    <!-- Photo 2 -->
+    <div class="memory-card" style="margin-top:40px;">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://i.postimg.cc/vBsxGtYz/IMG-20251019-WA0006-1.jpg" alt="Memory 2" class = "glow" />
+        </div>
+        <div class="card-back">
+          I didn't know love could feel this easy and this deep until I met you. ✨
+        </div>
+      </div>
+    </div>
+
+    <!-- Photo 3 -->
+    <div class="memory-card" style="margin-top:-20px;">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://i.postimg.cc/j54w2n23/IMG-20251019-WA0007.jpg" alt="Memory 3" class = "glow" />
+        </div>
+        <div class="card-back">
+          I'm grateful for the big things, but honestly, it's the quiet moments with you that I love the most. 💕
+        </div>
+      </div>
+    </div>
+
+    <!-- Photo 4 -->
+    <div class="memory-card" style="margin-top:100px;">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://i.postimg.cc/RFBJvLSX/IMG-20251019-WA0008.jpg" alt="Memory 4" class = "glow" />
+        </div>
+        <div class="card-back">
+          You make the future look brighter. I love building a life with you. ☁
+        </div>
+      </div>
+    </div>
+
+    <!-- Photo 5 -->
+    <div class="memory-card" style="margin-top:-30px;">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://i.postimg.cc/Hxg8T9Yt/IMG-20251019-WA0009.jpg" alt="Memory 5" class = "glow" />
+        </div>
+        <div class="card-back">
+          Missing you a little extra today. It's amazing how much of my heart you take up. 🧁
+        </div>
+      </div>
+    </div>
+
+    <!-- Photo 6 -->
+    <div class="memory-card" style="margin-top:60px;">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://i.postimg.cc/B6BLbPbM/IMG-20251019-WA0011.jpg" alt="Memory 6" class = "glow" />
+        </div>
+        <div class="card-back">
+          I love that I can be completely myself when I'm with you. You see all of me, and you still stay. 💓
+        </div>
+      </div>
+    </div>
+
+    <!-- Photo 7 -->
+    <div class="memory-card" style="margin-top:-10px;">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://i.postimg.cc/FHZmqbfb/IMG-20251019-WA0018-2.jpg" alt="Memory 7" class = "glow" />
+        </div>
+        <div class="card-back">
+          Just had a moment of pure gratitude for you. You really are my person. 🌞
+        </div>
+      </div>
+    </div>
+
+    <!-- Photo 8 -->
+    <div class="memory-card" style="margin-top:30px;">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://i.postimg.cc/Kvq94RgK/IMG-20251019-WA0016.jpg" alt="Memory 8" />
+        </div>
+        <div class="card-back">
+          My day automatically feels better just knowing you're in the world. 🎈
+        </div>
+      </div>
+    </div>
+
+    <!-- Photo 9 -->
+    <div class="memory-card" style="margin-top:30px;">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://i.postimg.cc/HWqp7kDT/IMG-20251019-WA0015.jpg" alt="Memory 9" />
+        </div>
+        <div class="card-back">
+          Every single time I look at you, I remember how lucky I am. I cherish you. 💋
+        </div>
+      </div>
+    </div>
+
+<!-- Photo 10 -->
+    <div class="memory-card" style="margin-top:30px;">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://i.postimg.cc/bwGH7wJY/IMG-20251020-WA0018.jpg" alt="Memory 10" />
+        </div>
+        <div class="card-back">
+          Sometimes I don’t need a reason to feel happy… your name itself feels like peace. 🌸
+        </div>
+      </div>
+    </div>
+
+<!-- Photo 11 -->
+    <div class="memory-card" style="margin-top:30px;">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://i.postimg.cc/g2wqC2JV/IMG-20251020-WA0019.jpg" alt="Memory 11" />
+        </div>
+        <div class="card-back">
+          Sometimes I just stop and think: This is it. You're the one. And it feels incredible. 🥰
+        </div>
+      </div>
+    </div>
+
+<!-- Photo 12 -->
+    <div class="memory-card" style="margin-top:30px;">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://i.postimg.cc/qvtXPvR8/IMG-20251020-WA0021.jpg" alt="Memory 12" />
+        </div>
+        <div class="card-back">
+          Being with you feels like the world pauses for a moment… and I never want it to start again. 🌸💖
+        </div>
+      </div>
+    </div>
+
+<!-- Photo 13 -->
+    <div class="memory-card" style="margin-top:30px;">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://i.postimg.cc/W1D6B135/IMG-20251020-WA0017.jpg" alt="Memory 13" />
+        </div>
+        <div class="card-back">
+          I never thought someone could feel like home… until I found you. 🏡❤️
+        </div>
+      </div>
+    </div>
+
+<!-- Photo 14 -->
+    <div class="memory-card" style="margin-top:30px;">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://i.postimg.cc/T3yqz3wq/IMG-20251020-WA0023.jpg" alt="Memory 14" />
+        </div>
+        <div class="card-back">
+          Every little thing you do makes my heart skip a beat… how did I get so lucky? 😌💕
+        </div>
+      </div>
+    </div>
+
+<!-- Photo 15 -->
+    <div class="memory-card" style="margin-top:30px;">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://i.postimg.cc/K8Kr68zD/IMG-20251020-WA0024.jpg" alt="Memory 15" />
+        </div>
+        <div class="card-back">
+          Sometimes I catch myself smiling out of nowhere… and then I realize it’s all because of you. 🥹💛
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="nav-buttons">
+    <button class="prev-btn" onclick="showSection('section2')">💫 Previous</button>
+    <button class="next-btn" onclick="showSection('section4')">Next 🎂</button>
+  </div>
+</section>
+
+  <!-- Section 4: Cake Touch -->
+   <!-- Fireworks Canvas -->
+<canvas id="fireworksCanvas"></canvas>
+
+  <section class="hidden" id="section4">
+    <div class="cake-container" style="position: relative; width: 300px; margin: auto;">
+      <div class="tap-indicator">⬇ Tap the Cake</div>
+      <img src="https://i.postimg.cc/RFCTbQn3/In-Shot-20251020-115251083.png" alt="Cake" class="cake" onclick="cutCake()" />
+    </div>
+    <div class="cake-message" id="cakeMsg">🎂 Happiest Birthday Jaan! 🎉</div>
+    <div class="nav-buttons">
+      <button onclick="showSection('section3')">💫 Previous</button>
+      <button class="next-btn" onclick="showSection('open-when')">Next 😘</button>
+    </div>
+  </section>
+
+  <!-- <Open Wish> -->
+  <section id="open-when">
+    <h2>💌 Open When… Letters 💌</h2>
+    <div class="letters-grid">
+        <div class="letter" onclick="openLetter('sad')">Open when you feel sad</div>
+        <div class="letter" onclick="openLetter('miss')">Open when you miss me</div>
+        <div class="letter" onclick="openLetter('sleep')">Open when you can’t sleep</div>
+        <div class="letter" onclick="openLetter('motivation')">Open when you need motivation</div>
+        <div class="letter" onclick="openLetter('smile')">Open when you need to smile</div>
+    </div>
+
+    <!-- Hidden Notes -->
+    <div id="letterContent" class="hidden">
+        <p id="noteText"></p>
+        <button onclick="closeLetter()">Close</button>
+    </div>
+    <div class="nav-buttons">
+      <button onclick="showSection('section3')">💫 Previous</button>
+      <button class="next-frame" onclick="showSection('section5'); showFinalMessage();">Final Surprise 💌</button>
+    </div>
+</section>
+
+<!-- Section 5: Final Message -->
+  <section class="hidden" id="section5">
+    <div class="final-message" id="typedMessage"></div>
+        <div class="nav-buttons">
+      <button onclick="showSection('section4')">💫 Previous</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
